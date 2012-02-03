@@ -16,6 +16,8 @@ def BaseName(filename):
         namear = filename.split('.')
         print "basename:", namear[0]
         return namear[0]
+    else:
+        return filename
 
 def GenerateTempParsedFile(filename, codec = 'utf-8'):
     outfile = BaseName(filename) + "_tempparsed.txt"
